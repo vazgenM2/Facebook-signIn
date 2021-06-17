@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Mulish", sans-serif;
+	background-color: #f0f2f5;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px;
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	margin: 0px auto;
+	margin: 100px 0px 150px;
+	@media (max-width: 1060px) {
+		margin-top: 30px;
+	}
+	.main {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1000px;
+		margin: 0px auto;
+		@media (max-width: 1060px) {
+			flex-direction: column;
+			align-items: center;
+			.info {
+				text-align: center;
+				margin-bottom: 30px;
+				margin-top: 0px;
+			}
+		}
+		@media (max-width: 530px) {
+			.info {
+				margin-bottom: 60px;
+			}
+		}
+		.info {
+			display: flex;
+			max-width: 50%;
+			height: 200px;
+			margin-top: 60px;
+			flex-direction: column;
+			justify-content: center;
+			@media (max-width: 500px) {
+				max-width: 90%;
+			}
+			.title {
+				color: #1877f2;
+				font-size: 60px;
+				font-family: "Mulish", sans-serif;
+			}
+			.info_text {
+				max-width: 90%;
+				font-size: 27px;
+				@media (max-width: 1060px) {
+					margin: 0px auto;
+					font-size: 23px;
+				}
+				@media (max-width: 460px) {
+					font-size: 20px;
+				}
+			}
+		}
+		.form {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			@media (max-width: 450px) {
+				width: 100%;
+			}
+		}
+		form {
+			align-self: center;
+			width: 400px;
+			height: 360px;
+			margin-right: 0;
+			background-color: #ffffff;
+			box-shadow: 0px 3px 10px #cacbcc;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@media (max-width: 450px) {
+				width: 90%;
+			}
+			input {
+				width: 80%;
+				height: 40px;
+				margin: 10px;
+				border-radius: 5px;
+				border: 1px solid #dddfe2;
+				box-shadow: 0px 0px 3px #dddfe2;
+				padding: 5px 15px;
+				font-size: 16px;
+				&:first-child {
+					margin-top: 20px;
+				}
+				&::placeholder {
+					color: #9e999e;
+				}
+				&:focus {
+					border: 1px solid #1877f2;
+					outline: none;
+					box-shadow: 0px 0px 2px #1877f2;
+				}
+			}
+			.signin {
+				width: 88%;
+				height: 50px;
+				padding: 10px;
+				background-color: #1877f2;
+				color: #fff;
+				cursor: pointer;
+				font-size: 20px;
+				margin-top: 10px;
+				font-weight: bold;
+				border: none;
+				border-radius: 8px;
+				transition: all ease 0.3s;
+				&:hover {
+					background-color: #166fe5;
+				}
+			}
+			.forget_password {
+				color: #188cf5;
+				margin: 15px 0px;
+				font-size: 15px;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			.hr {
+				width: 88%;
+				height: 1px;
+				background-color: #9e999e;
+				border: 0px;
+				opacity: 0.4;
+				margin: 0 0 20px 0;
+			}
+			.signup {
+				width: 180px;
+				height: 50px;
+				transition: all ease 0.3s;
+				padding: 10px;
+				background-color: #42b72a;
+				color: #fff;
+				font-weight: bold;
+				cursor: pointer;
+				font-size: 17px;
+				border: none;
+				border-radius: 8px;
+				&:hover {
+					background-color: #36a420;
+				}
+			}
+		}
+		.default {
+			font-size: 14px;
+			text-align: center;
+			margin: 25px auto 0px;
+			max-width: 90%;
+			@media (max-width: 750px) {
+				max-width: 95%;
+			}
+		}
+		.boldlink {
+			color: #000;
+			font-weight: bold;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	padding: 20px 0px 30px;
+	background-color: #fff;
+	// position: absolute;
+	bottom: 0;
+	.footer_container {
+		max-width: 1000px;
+		margin: 0px auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		.lang-ul {
+			list-style: none;
+			display: flex;
+			padding-left: 0;
+			flex-wrap: wrap;
+			li {
+				margin: 7px;
+				line-height: 60%;
+				cursor: pointer;
+				font-size: 12px;
+				a {
+					text-decoration: none;
+					color: #3858b1;
+					&.active {
+						color: #737388;
+					}
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.bighr {
+			width: 100%;
+			height: 1px;
+			background-color: #9e999e;
+			border: 0px;
+			opacity: 0.4;
+			margin: 0;
+		}
+		.def_text {
+			color: #737388;
+			margin-top: 20px;
+			font-size: 11px;
+			padding-left: 5px;
+		}
+	}
+}
